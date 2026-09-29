@@ -23,8 +23,8 @@ ago, what changed since, and how many times something happened. Here is where Fa
 systems that publish a score.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-dark.svg">
-  <img src="assets/longmemeval-s-light.svg" alt="LongMemEval-S scores: Mastra 94.9, Fathom-lake 94.8 with Claude Opus 5.5, Mem0 94.4 (73.8 when rerun by Maximem, a competing vendor), ByteRover 92.8, Hindsight 91.4, Honcho 90.4, Fathom-lake 88.0 with Claude Haiku 4.5, Supermemory 81.6, Zep 71.2" width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-dark-627a908d.svg">
+  <img src="assets/longmemeval-s-light-3e356756.svg" alt="LongMemEval-S scores: Mastra 94.9, Fathom-lake 94.8 with Claude Opus 5.5, Mem0 94.4 (73.8 when rerun by Maximem, a competing vendor), ByteRover 92.8, Hindsight 91.4, Honcho 90.4, Fathom-lake 88.0 with Claude Haiku 4.5, Supermemory 81.6, Zep 71.2" width="760">
 </picture>
 
 Fathom-lake's two scores are graded by the benchmark's own script and grader (`gpt-4o-2024-08-06`, unmodified). The
@@ -45,8 +45,8 @@ memory has to find the right pieces on its own. Every score in the chart above i
 simply don't publish M.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-vs-m-dark.svg">
-  <img src="assets/longmemeval-s-vs-m-light.svg" alt="Fathom-lake on LongMemEval S and M: overall 94.8 to 85.0, a single fact the user said 97.1 to 94.3, facts spread over many sessions 92.5 to 74.4. No other system publishes an M score." width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-vs-m-dark-fa190b06.svg">
+  <img src="assets/longmemeval-s-vs-m-light-652ab40c.svg" alt="Fathom-lake on LongMemEval S and M: overall 94.8 to 85.0, a single fact the user said 97.1 to 94.3, facts spread over many sessions 92.5 to 74.4. No other system publishes an M score." width="760">
 </picture>
 
 Finding one fact in 1.5 million tokens barely moves (97.1% to 94.3%). Gathering facts scattered across many sessions
