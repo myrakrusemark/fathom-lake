@@ -1,0 +1,39 @@
+{
+  "description": "Codex Lake memory; shared implementations, source=codex. Prompt/final capture only.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "env LAKE_SOURCE=codex bash \"${PLUGIN_ROOT}/hooks/session-start.sh\"",
+            "timeout": 8
+          }
+        ],
+        "matcher": "startup|resume|clear|compact"
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "env LAKE_SOURCE=codex bash \"${PLUGIN_ROOT}/hooks/prompt.sh\"",
+            "timeout": 8
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "env LAKE_SOURCE=codex bash \"${PLUGIN_ROOT}/hooks/stop.sh\"",
+            "timeout": 8
+          }
+        ]
+      }
+    ]
+  }
+}

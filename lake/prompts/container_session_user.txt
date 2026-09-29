@@ -1,0 +1,8 @@
+══ THE SESSION ══
+{n} rows from {t_start} to {t_end}: one session ({tag}), grouped by the host.
+{part}{rows}
+
+══ HOW TO RESPOND ══
+These rows are one session. The host grouped them, so there is nothing to
+decide about which rows belong, and there is no skip. Emit the title,
+summary and changes object.

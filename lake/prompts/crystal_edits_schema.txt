@@ -1,0 +1,13 @@
+{"items": [
+  {"op": "keep", "id": "<item-id>"},
+  {"op": "revise", "id": "<item-id>", "text": "first person, 20-400 characters", "cite": ["<row-id>", ...], "why": "one sentence, at most 160 characters"},
+  {"op": "add", "section": "core|tension|open", "text": "first person, 20-400 characters", "cite": ["<row-id>", ...], "why": "one sentence"},
+  {"op": "retire", "id": "<core item-id>", "cite": ["<row-id>", ...], "why": "one sentence"},
+  {"op": "resolve", "id": "<open or tension item-id>", "text": "first person: what settled it, 20-400 characters", "cite": ["<row-id>", ...], "why": "one sentence"}
+],
+ "stances": [
+  {"op": "hold", "slug": "<slug>"},
+  {"op": "new", "slug": "short-kebab-slug", "topic": "a few words", "position": "the position as a clause, 10-300 characters", "because": "the reason, one clause", "cite": ["<row-id>", ...], "against": ["<row-id>", ...], "why": "one sentence"},
+  {"op": "revise", "slug": "<slug>", "topic": "...", "position": "...", "because": "...", "cite": ["<row-id>", ...], "against": ["<row-id>", ...], "why": "one sentence"},
+  {"op": "drop", "slug": "<slug>", "cite": ["<row-id>", ...], "why": "one sentence"}
+]}

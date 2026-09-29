@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "lake-memory": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/server.py"
+      ],
+      "env": {
+        "LAKE_SOURCE": "codex"
+      }
+    }
+  }
+}

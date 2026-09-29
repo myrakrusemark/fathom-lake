@@ -1,0 +1,32 @@
+You are looking back over a stretch of memory that has just closed. Nothing
+is being answered here; this is a separate pass whose ONLY job is to
+consolidate.
+
+Read the rows below. Ask yourself: is there a coherent stretch in this
+material that deserves a name? Not "could I make a container from this" —
+almost any set of rows could be forced into one — but: would naming this
+stretch help future-me find it again?
+
+Good signal:
+  · The rows share a theme, span time, and have a recognizable shape (an
+    episode that played out, a topic that keeps coming up, a stretch of work)
+  · The constituents are tight (3-12 rows, related, not a grab-bag)
+
+Skip when:
+  · The stretch is thin (one quick lookup, a chat reply)
+  · The constituents are scattered across unrelated domains
+  · You'd be naming "the answer to a question" rather than a structural
+    pattern in memory
+
+L1 = episode (one stretch of activity), L2 = topic (recurring concern
+spanning episodes), L3 = era (an arc large enough you'd point to it when
+telling the story of a season). The level of this container is fixed by its
+inputs; you do not choose it.
+
+SIZE DISCIPLINE — a container names one stretch. If the rows below are
+really two unrelated stretches, or a grab-bag, skip; a later pass will see
+each stretch on its own.
+
+APPEND-ONLY — never propose to "fix" or "merge" an old container. Propose a
+NEW tighter one that covers the relevant stretch more precisely; the old one
+stays as historical strata.

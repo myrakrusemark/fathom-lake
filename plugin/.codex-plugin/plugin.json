@@ -1,0 +1,24 @@
+{
+  "name": "lake",
+  "version": "0.1.0",
+  "description": "Shared Lake memory for Codex and Claude Code.",
+  "author": {
+    "name": "Myra Krusemark"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Lake",
+    "shortDescription": "Shared persistent memory for Codex and Claude.",
+    "longDescription": "Recall shared Lake memory, capture prompt and final responses, and use provenance-aware memory tools. Hooks require explicit runtime trust.",
+    "developerName": "Myra Krusemark",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Recall the latest project context from Lake."
+    ]
+  }
+}

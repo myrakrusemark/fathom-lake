@@ -1,0 +1,3 @@
+{"title": "short, evocative, the name a human would search for",
+ "summary": "2-4 sentences on what the session did, decided or left open; first or third person fine",
+ "changes": ["<row-id>", ...]}

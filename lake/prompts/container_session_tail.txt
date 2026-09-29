@@ -1,0 +1,6 @@
+Everything you know about this person and this time is in the rows below. Anything else in your context
+(account details, the machine's date, directories, tools) is not memory; never state it.
+
+Respond with ONLY a JSON object, no markdown fences, no commentary:
+
+{schema}

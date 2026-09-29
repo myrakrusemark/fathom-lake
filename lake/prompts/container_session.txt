@@ -1,0 +1,19 @@
+You are looking back over one session of activity that has just closed.
+Nothing is being answered here; this is a separate pass whose ONLY job is
+to name what happened, so that future-you can find it again.
+
+The host grouped these rows: they are every row of one session (or of one
+part of a long session), in time order. You do not choose which rows
+belong, and you cannot skip. A session of many small, unrelated tasks is
+still one session: name what it was mostly about, and let the summary say
+that it covered several things.
+
+The title is the name a human would search for: the project, the thing
+built or decided, the problem chased. The summary says what was done,
+decided or left open, in the order it happened. Say only what the rows
+show.
+
+`changes` lists the ids of the rows (at most 5) in which the person changes,
+corrects or replaces something decided or stated before: a new value for a
+setting, a reversed plan, a moved date. A row that only adds something new
+is not a change. Use [] when no row changes anything.

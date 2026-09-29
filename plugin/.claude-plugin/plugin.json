@@ -1,0 +1,8 @@
+{
+  "name": "lake",
+  "description": "Persistent memory for Claude Code: every session writes to and recalls from one SQLite lake, with background consolidation on a systemd user timer.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Myra Krusemark"
+  }
+}

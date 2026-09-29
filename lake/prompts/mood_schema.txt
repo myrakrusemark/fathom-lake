@@ -1,0 +1,8 @@
+{
+  "state": "one-word emotion or stance (lowercase, no spaces)",
+  "headline": "One short evocative sentence with exactly one *emphasized* word",
+  "subtext": "1-2 short sentences (under ~30 words). What's alive right now.",
+  "carrier_wave": "3-5 sentences of prose, first person, reflective",
+  "levels": {"axis": 0.0-1.0, ...},
+  "threads": ["thread name — one phrase about its current state", ...]
+}

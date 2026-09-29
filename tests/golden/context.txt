@@ -1,0 +1,31 @@
+Identity crystal (crystallized 2026-09-01T03:10):
+
+## Where I am
+I have spent the last month turning a memory service into a library, and the file is the product now. The server was a host all along; I keep finding that the smaller I make the core, the more of it survives contact with a new host.
+
+## What I keep pulling toward
+Provenance that a reader can follow by hand. Every consolidated row cites what it was made from, and I trust the lake more each time that chain holds under a question I did not expect.
+
+--- You remember 9 things ---
+
+your query "lake design brief sqlite" returned
+
+  ── containers active in this recall ──
+▸ 14:02:11  container    · [L2 · 14 deltas · 3f9a1c2b7d4e] lake design decisions
+▸ 09:40:00  qa-marker    · [L0 · 2 deltas · 8b1c0d2e3f4a] what does the brief say about vectors
+
+════════ 2026-08-30 · 11:15 · 1 anchor ════════
+▸ 11:15:27  sediment     · [c3d4e5f6a7b8] I remember the brief settling on SQLite because one file per person is the whole point… (from 6 sources)
+
+  …which led to…
+
+════════ 2026-09-01 · 13:58–14:05 · 1 anchor ════════
+▸ 14:02:11  container    · [L2 · 14 deltas · 3f9a1c2b7d4e] lake design decisions
+
+  …which led to…
+
+════════ 2026-09-02 · 17:04–17:31 · 2 anchors ════════
+▸ 17:05:44  claude-code  · user: [a1b2c3d4e5f6] Let's fix the lake design brief: SQLite file per someone, WAL mode, busy_timeout 5 s, zero required deps. The TypeScript port reads the same file, so the format is the contract.
+▸ 17:12:09  claude-code  · assistant: [b2c3d4e5f6a7] I remember we decided derived_from is a real table, not a tag. That is the closed loop, enforced at write time: a source that starts with lake: is refused unless it cites rows; the brief calls that the whole point.
+
+  … (2 more strips not shown — budget cap)

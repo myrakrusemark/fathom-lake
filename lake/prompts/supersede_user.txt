@@ -1,0 +1,7 @@
+══ FLAGGED ROWS AND EARLIER ROWS ON THE SAME TOPIC ══
+{blocks}
+
+══ HOW TO RESPOND ══
+For each flagged row that replaces a value one of its earlier rows states,
+emit one pair. Use only the ids shown, "new" from a FLAGGED line and "old"
+from an earlier line under it. Emit {"pairs": []} when none.

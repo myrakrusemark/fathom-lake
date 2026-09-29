@@ -1,0 +1,77 @@
+Now (the lake's clock): 2026-09-02T18:00Z
+
+══ THE STRETCH ══
+3 rows from 2026-09-02T17:20 to 2026-09-02T17:20, level 1 container.
+[<id1>] 2026-09-02T17:20 chat · chat row at 2026-09-02 17:20:00+00:00 about the lake design
+[<id2>] 2026-09-02T17:20 chat · chat row at 2026-09-02 17:20:10+00:00 about the lake design
+[<id3>] 2026-09-02T17:20 chat · chat row at 2026-09-02 17:20:20+00:00 about the lake design
+
+══ HOW TO RESPOND ══
+If a coherent stretch is worth naming AND at least 2 of these rows
+genuinely belong together, emit the propose object. If the material is thin
+or the rows don't actually cluster, emit skip — better no container than a
+dead-weight one.
+
+Your previous answer was rejected: kind must be "propose" or "skip". Reply with only one JSON object in exactly this shape:
+{"kind": "propose",
+ "title": "short, evocative, the name a human would search for",
+ "summary": "2-4 sentences; first or third person fine",
+ "from_ids": ["<row-id>", ...],
+ "rationale": "one sentence — why these are one stretch"}
+
+or
+
+{"kind": "skip", "reason": "<one sentence on why no container>"}
+
+=== SYSTEM ===
+
+You are looking back over a stretch of memory that has just closed. Nothing
+is being answered here; this is a separate pass whose ONLY job is to
+consolidate.
+
+Read the rows below. Ask yourself: is there a coherent stretch in this
+material that deserves a name? Not "could I make a container from this" —
+almost any set of rows could be forced into one — but: would naming this
+stretch help future-me find it again?
+
+Good signal:
+  · The rows share a theme, span time, and have a recognizable shape (an
+    episode that played out, a topic that keeps coming up, a stretch of work)
+  · The constituents are tight (3-12 rows, related, not a grab-bag)
+
+Skip when:
+  · The stretch is thin (one quick lookup, a chat reply)
+  · The constituents are scattered across unrelated domains
+  · You'd be naming "the answer to a question" rather than a structural
+    pattern in memory
+
+L1 = episode (one stretch of activity), L2 = topic (recurring concern
+spanning episodes), L3 = era (an arc large enough you'd point to it when
+telling the story of a season). The level of this container is fixed by its
+inputs; you do not choose it.
+
+SIZE DISCIPLINE — a container names one stretch. If the rows below are
+really two unrelated stretches, or a grab-bag, skip; a later pass will see
+each stretch on its own.
+
+APPEND-ONLY — never propose to "fix" or "merge" an old container. Propose a
+NEW tighter one that covers the relevant stretch more precisely; the old one
+stays as historical strata.
+
+Everything you know about this person and this time is in the rows below. Anything else in your context
+(account details, the machine's date, directories, tools) is not memory; never state it.
+
+Only use row ids that appear in the list below — the 12-char hex ids in the
+[<id>] slugs. Never invent ids.
+
+Respond with ONLY a JSON object, no markdown fences, no commentary. Either
+
+{"kind": "propose",
+ "title": "short, evocative, the name a human would search for",
+ "summary": "2-4 sentences; first or third person fine",
+ "from_ids": ["<row-id>", ...],
+ "rationale": "one sentence — why these are one stretch"}
+
+or
+
+{"kind": "skip", "reason": "<one sentence on why no container>"}

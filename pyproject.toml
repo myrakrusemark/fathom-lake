@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fathom-lake"
+version = "0.1.0"
+description = "A self-provenance-generating, closed-loop memory for LLM agents. One SQLite file per someone; you bring the model."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Myra Krusemark" }]
+dependencies = []
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.24"]
+mcp = ["mcp>=1.0"]
+dev = ["pytest>=8", "numpy>=1.24", "mcp>=1.0", "mypy>=1.10"]
+
+[project.scripts]
+lake = "lake.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lake"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "slow: long-running tests (scale, mypy); deselect with -m 'not slow'",
+    "plugin: Claude Code plugin tests (hook scripts, MCP server, timer scripts)",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unreachable = true

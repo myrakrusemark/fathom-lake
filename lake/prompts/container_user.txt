@@ -1,0 +1,9 @@
+══ THE STRETCH ══
+{n} rows from {t_start} to {t_end}, level {level} container.
+{rows}
+
+══ HOW TO RESPOND ══
+If a coherent stretch is worth naming AND at least {floor} of these rows
+genuinely belong together, emit the propose object. If the material is thin
+or the rows don't actually cluster, emit skip — better no container than a
+dead-weight one.

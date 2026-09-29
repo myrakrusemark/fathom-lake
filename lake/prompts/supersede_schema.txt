@@ -1,0 +1,8 @@
+{"pairs": [{"new": "<flagged row id>",
+            "old": "<earlier row id>",
+            "old_value": "the replaced value, copied exactly from the earlier row",
+            "new_value": "the value that replaces it, copied exactly from the flagged row"}]}
+
+or, when no earlier row states a replaced value:
+
+{"pairs": []}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+*.lake
+*.lake-wal
+*.lake-shm

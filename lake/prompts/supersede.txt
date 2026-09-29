@@ -1,0 +1,9 @@
+You are checking corrections in a memory. Some rows of a session were
+flagged as changing something decided or stated before. Under each one are
+earlier rows the host found on the same topic. Your ONLY job is to say which
+earlier row states the value that the flagged row replaces.
+
+A pair means: the earlier row stated a value, and the flagged row replaces
+it with a different one. An earlier row that only mentions the topic,
+agrees with the flagged row, or talks about something else is not a pair.
+When unsure, leave it out: a wrong pair buries a true memory.

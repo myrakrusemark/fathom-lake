@@ -1,0 +1,9 @@
+{"kind": "propose",
+ "title": "short, evocative, the name a human would search for",
+ "summary": "2-4 sentences; first or third person fine",
+ "from_ids": ["<row-id>", ...],
+ "rationale": "one sentence — why these are one stretch"}
+
+or
+
+{"kind": "skip", "reason": "<one sentence on why no container>"}

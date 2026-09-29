@@ -1,0 +1,45 @@
+Now (the lake's clock): 2026-09-02T18:00Z
+
+══ THE SESSION ══
+5 rows from 2026-09-02T16:10 to 2026-09-02T16:30: one session (session:b), grouped by the host.
+[<id1>] 2026-09-02T16:10 claude-code · user: b turn 0: working on part 0 of the task
+[<id2>] 2026-09-02T16:15 claude-code · assistant: b turn 1: working on part 1 of the task
+[<id3>] 2026-09-02T16:20 claude-code · user: b turn 2: working on part 2 of the task
+[<id4>] 2026-09-02T16:25 claude-code · assistant: b turn 3: working on part 3 of the task
+[<id5>] 2026-09-02T16:30 claude-code · user: b turn 4: working on part 4 of the task
+
+══ HOW TO RESPOND ══
+These rows are one session. The host grouped them, so there is nothing to
+decide about which rows belong, and there is no skip. Emit the title,
+summary and changes object.
+
+=== SYSTEM ===
+
+You are looking back over one session of activity that has just closed.
+Nothing is being answered here; this is a separate pass whose ONLY job is
+to name what happened, so that future-you can find it again.
+
+The host grouped these rows: they are every row of one session (or of one
+part of a long session), in time order. You do not choose which rows
+belong, and you cannot skip. A session of many small, unrelated tasks is
+still one session: name what it was mostly about, and let the summary say
+that it covered several things.
+
+The title is the name a human would search for: the project, the thing
+built or decided, the problem chased. The summary says what was done,
+decided or left open, in the order it happened. Say only what the rows
+show.
+
+`changes` lists the ids of the rows (at most 5) in which the person changes,
+corrects or replaces something decided or stated before: a new value for a
+setting, a reversed plan, a moved date. A row that only adds something new
+is not a change. Use [] when no row changes anything.
+
+Everything you know about this person and this time is in the rows below. Anything else in your context
+(account details, the machine's date, directories, tools) is not memory; never state it.
+
+Respond with ONLY a JSON object, no markdown fences, no commentary:
+
+{"title": "short, evocative, the name a human would search for",
+ "summary": "2-4 sentences on what the session did, decided or left open; first or third person fine",
+ "changes": ["<row-id>", ...]}
