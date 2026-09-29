@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="454" viewBox="0 0 760 454" role="img" aria-label="LongMemEval-S scores by memory system">
+<text x="0.0" y="24.0" fill="#e6edf3" font-size="17" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">LongMemEval-S, 500 questions</text>
+<text x="0.0" y="46.0" fill="#9198a1" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Each vendor's own reported score unless marked; answering models and graders differ.</text>
+<line x1="250.0" y1="62" x2="250.0" y2="418" stroke="#3d444d" stroke-width="1"/>
+<text x="250.0" y="436.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">0%</text>
+<line x1="360.0" y1="62" x2="360.0" y2="418" stroke="#3d444d" stroke-width="1"/>
+<text x="360.0" y="436.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">25%</text>
+<line x1="470.0" y1="62" x2="470.0" y2="418" stroke="#3d444d" stroke-width="1"/>
+<text x="470.0" y="436.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">50%</text>
+<line x1="580.0" y1="62" x2="580.0" y2="418" stroke="#3d444d" stroke-width="1"/>
+<text x="580.0" y="436.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">75%</text>
+<line x1="690.0" y1="62" x2="690.0" y2="418" stroke="#3d444d" stroke-width="1"/>
+<text x="690.0" y="436.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">100%</text>
+<text x="238.0" y="82.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mastra Observational Memory</text>
+<text x="238.0" y="96.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpt-5-mini</text>
+<rect x="250" y="74" width="417.6" height="20" rx="3" fill="#6e7781"/>
+<text x="675.6" y="89.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.9%</text>
+<text x="238.0" y="116.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Fathom-lake</text>
+<text x="238.0" y="130.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Claude Opus 5.5</text>
+<rect x="250" y="108" width="417.1" height="20" rx="3" fill="#35c4b0"/>
+<text x="675.1" y="123.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.8%</text>
+<text x="238.0" y="150.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mem0</text>
+<text x="238.0" y="164.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">answering model not stated</text>
+<rect x="250" y="142" width="415.4" height="20" rx="3" fill="#6e7781"/>
+<text x="673.4" y="157.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.4%</text>
+<text x="238.0" y="184.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">ByteRover</text>
+<text x="238.0" y="198.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Gemini grader</text>
+<rect x="250" y="176" width="408.3" height="20" rx="3" fill="#6e7781"/>
+<text x="666.3" y="191.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">92.8%</text>
+<text x="238.0" y="218.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Hindsight</text>
+<text x="238.0" y="232.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Gemini 3</text>
+<rect x="250" y="210" width="402.2" height="20" rx="3" fill="#6e7781"/>
+<text x="660.2" y="225.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">91.4%</text>
+<text x="238.0" y="252.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Honcho</text>
+<text x="238.0" y="266.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Claude Haiku 4.5</text>
+<rect x="250" y="244" width="397.8" height="20" rx="3" fill="#6e7781"/>
+<text x="655.8" y="259.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">90.4%</text>
+<text x="238.0" y="286.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Fathom-lake</text>
+<text x="238.0" y="300.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Claude Haiku 4.5</text>
+<rect x="250" y="278" width="387.2" height="20" rx="3" fill="#2b8c7f"/>
+<text x="645.2" y="293.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">88.0%</text>
+<text x="238.0" y="320.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Supermemory</text>
+<text x="238.0" y="334.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpt-4o</text>
+<rect x="250" y="312" width="359.0" height="20" rx="3" fill="#6e7781"/>
+<text x="617.0" y="327.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">81.6%</text>
+<text x="238.0" y="354.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mem0, independent rerun</text>
+<text x="238.0" y="368.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">GPT-5 harness</text>
+<rect x="250" y="346" width="324.7" height="20" rx="3" fill="#f0883e"/>
+<text x="582.7" y="361.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">73.8%</text>
+<text x="238.0" y="388.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Zep / Graphiti</text>
+<text x="238.0" y="402.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpt-4o</text>
+<rect x="250" y="380" width="313.3" height="20" rx="3" fill="#6e7781"/>
+<text x="571.3" y="395.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">71.2%</text>
+</svg>

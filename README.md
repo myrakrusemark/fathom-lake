@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/fathom-logo-dark.svg">
+    <img src="assets/fathom-logo-light.svg" alt="Fathom" width="240">
+  </picture>
+</p>
+
 # Fathom-lake
 
 Memory for LLM agents that never throws anything away. Everything your agent hears goes into one SQLite file, exactly
@@ -12,38 +19,44 @@ pip install fathom-lake
 
 [LongMemEval](https://github.com/xiaowu0162/LongMemEval) is the standard test for long-term chat memory: 500
 questions, each asked after a long history of past conversations, about things like what the user said three weeks
-ago, what changed since, and how many times something happened. It comes in two sizes. **S** gives each question
-about 50 past sessions (roughly 115,000 tokens). **M** gives each question about 500 sessions (roughly 1.5 million
-tokens), which is too much to paste into any prompt.
+ago, what changed since, and how many times something happened. Here is where Fathom-lake sits among the memory
+systems that publish a score.
 
-| test | Fathom-lake | answering model |
-|---|---:|---|
-| LongMemEval-S, 500 questions | **94.8%** | Claude Opus 5.5 |
-| LongMemEval-S, 500 questions | **88.0%** | Claude Haiku 4.5 |
-| LongMemEval-M, 500 questions | **85.0%** | Claude Opus 5.5 |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-dark.svg">
+  <img src="assets/longmemeval-s-light.svg" alt="LongMemEval-S scores: Mastra 94.9, Fathom-lake 94.8 with Claude Opus 5.5, Mem0 94.4 (73.8 in an independent rerun), ByteRover 92.8, Hindsight 91.4, Honcho 90.4, Fathom-lake 88.0 with Claude Haiku 4.5, Supermemory 81.6, Zep 71.2" width="760">
+</picture>
 
-All three are graded by the benchmark's own grading script with its own grader, `gpt-4o-2024-08-06`, unmodified.
+Fathom-lake's two scores are graded by the benchmark's own script and grader (`gpt-4o-2024-08-06`, unmodified). The
+others are what each vendor reports for itself, with different answering models and graders, so read the chart as a
+neighbourhood rather than a ranking. Sources:
+[Mastra](https://mastra.ai/research/observational-memory),
+[Mem0](https://mem0.ai/blog/state-of-ai-agent-memory-2026) and its
+[independent rerun](https://www.maximem.ai/blog/state-of-ai-memory-2026-claimed-vs-observed),
+[ByteRover](https://www.byterover.dev/blog/benchmark_ai_agent_memory_real_production_byterover_top_market_accuracy_longmemeval),
+[Hindsight](https://arxiv.org/abs/2512.12818), [Honcho](https://honcho.dev/evals),
+[Supermemory](https://supermemory.ai/research/longmembench/), [Zep](https://arxiv.org/abs/2501.13956).
 
-For context, here are the LongMemEval-S scores other memory systems report for themselves. Their answering models and
-graders differ from ours and from each other, so read this as a neighbourhood, not a ranking:
+### Ten times the history
 
-| system | reported LongMemEval-S | answering model | source |
-|---|---:|---|---|
-| Mastra Observational Memory | 94.9% | gpt-5-mini | [mastra.ai](https://mastra.ai/research/observational-memory) |
-| **Fathom-lake** | **94.8%** | Claude Opus 5.5 | this page |
-| Mem0 | 94.4% (73.8% in an [independent rerun](https://www.maximem.ai/blog/state-of-ai-memory-2026-claimed-vs-observed)) | not stated | [mem0.ai](https://mem0.ai/blog/state-of-ai-agent-memory-2026) |
-| ByteRover | 92.8% (Gemini grader) | not stated | [byterover.dev](https://www.byterover.dev/blog/benchmark_ai_agent_memory_real_production_byterover_top_market_accuracy_longmemeval) |
-| Hindsight | 91.4% | Gemini 3 | [arXiv](https://arxiv.org/abs/2512.12818) |
-| Honcho | 90.4% | Claude Haiku 4.5 | [honcho.dev](https://honcho.dev/evals) |
-| **Fathom-lake** | **88.0%** | Claude Haiku 4.5 | this page |
-| Supermemory | 81.6% | gpt-4o | [supermemory.ai](https://supermemory.ai/research/longmembench/) |
-| Zep / Graphiti | 71.2% | gpt-4o | [arXiv](https://arxiv.org/abs/2501.13956) |
+The test comes in two sizes. **S** gives each question about 50 past sessions (roughly 115,000 tokens). **M** gives
+each question about 500 sessions (roughly 1.5 million tokens), which is far more than fits in any prompt, so the
+memory has to find the right pieces on its own. Every score in the chart above is an S score: most memory systems
+simply don't publish M.
 
-What we think matters more than the second decimal:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-vs-m-dark.svg">
+  <img src="assets/longmemeval-s-vs-m-light.svg" alt="Fathom-lake on LongMemEval S and M: overall 94.8 to 85.0, a single fact the user said 97.1 to 94.3, facts spread over many sessions 92.5 to 74.4. No other system publishes an M score." width="760">
+</picture>
 
-- **The M test.** We could not find another published full LongMemEval-M result. Most memory systems run a language
-  model over every message as it arrives, to pull out facts, and at 1.5 million tokens per question that bill adds up
-  fast. Fathom-lake stores messages as they are, so ingesting M costs nothing but disk.
+Finding one fact in 1.5 million tokens barely moves (97.1% to 94.3%). Gathering facts scattered across many sessions
+is the hard part, and it is where we are working next.
+
+### What's most important:
+
+- **We run the M test.** We could not find another published full LongMemEval-M result. Most memory systems run a
+  language model over every message as it arrives, to pull out facts, and at 1.5 million tokens per question that
+  bill adds up fast. Fathom-lake stores messages as they are, so ingesting M costs nothing but disk.
 - **No model call when a memory is saved.** Writing is an insert into SQLite. A model runs later, when you ask it to
   digest (on a timer, overnight, or never), and anything saved while no model was reachable is simply digested later.
 - **We say which reader we used.** Swapping Opus for the much smaller Haiku, with the same memory and the same
@@ -97,38 +110,81 @@ We test this on invented worlds (fictional people, projects and opinions, months
 - **Two lives, two selves.** Twin lakes given different histories split on 2 of 4 contested questions, where the
   free-prose self split on none.
 
-## Use it
+## Use it: as a library, self-hosted, or on a central server
+
+The same file and the same API work in all three setups; only where the file lives changes.
+
+### As a library, inside your own program
+
+```
+pip install fathom-lake                # standard library only; add [numpy] for faster vector recall
+```
 
 ```python
 import lake
 
-mem = lake.open("agent.lake")                  # a file per agent, reader, machine, or friend
-# mem = lake.open("https://host:8377", token="...")   # the same API, served from another machine
+mem = lake.open("agent.lake")          # one file per agent, reader, or user
 
 mem.write("the rope on the sill is for the window, not the door", source="reader", tags=["book:holes"])
 prompt_block = mem.context("what is the rope for")    # recalled memory, rendered as prompt text
 
+# optional: give it a model and it digests (summaries, mood, the crystal), whatever is due
 mem = lake.open("agent.lake", think="claude:--model claude-opus-5-5[1m]")
-mem.digest()      # summaries, mood and the crystal, whatever is due; safe to call as often as you like
+mem.digest()                           # safe to call as often as you like, from your own loop or scheduler
 ```
 
 The model is any callable `think(prompt, *, system=None, json=False)` or a spec string: `claude` (runs `claude -p`
 on your machine), `ollama:<model>@<url>`, or `cmd:<shell command>`. Embeddings are optional; without them recall is
-full-text only.
+full-text only. [`GUIDE.md`](GUIDE.md) walks through a complete agent, and
+[`examples/agent_with_memory.py`](examples/agent_with_memory.py) is the same thing in 30 lines.
+
+### Self-hosted, for Claude Code or Codex on your own machine
+
+The plugin gives your coding agent a lake: every prompt and reply is written, and relevant memory is recalled into
+each new prompt. The file lives at `~/.lake/claude.lake` and nothing leaves your machine except the model calls you
+already make.
 
 ```
-lake --lake agent.lake write "..." --source reader --tag book:holes
-lake --lake agent.lake context "what is the rope for"
-lake --lake agent.lake digest --think ollama:qwen3.6@http://localhost:11434
-lake serve --lake agent.lake --digest nightly     # one lake shared across machines
+pip install 'fathom-lake[mcp]'
+git clone https://github.com/myrakrusemark/fathom-lake
+cp -r fathom-lake/plugin ~/.claude/skills/lake        # Claude Code loads it on the next start
+bash ~/.claude/skills/lake/scripts/install-timer.sh    # nightly digest with `claude -p` (a systemd user timer)
 ```
 
-`plugin/` gives Claude Code and Codex a lake: every prompt and reply is written, and relevant memory is recalled into
-each new prompt.
+Codex uses the same hooks; see [`plugin/codex/README.md`](plugin/codex/README.md). Every setting is optional and
+listed in [`plugin/README.md`](plugin/README.md).
+
+### On a central server, one memory for several machines
+
+Put the file on one machine and serve it; every other machine, agent, or program uses it over HTTP with the same API.
+The model runs where the file is, so digestion happens on the server.
+
+On the server:
+
+```
+pip install fathom-lake
+export LAKE_TOKEN=$(openssl rand -hex 24)      # or put it in ~/.lake/token, mode 0600
+lake serve --lake ~/.lake/team.lake --bind 0.0.0.0 --port 8377 --think claude --digest nightly
+```
+
+On each client, point at it once in `~/.lake/env`, and the CLI, the plugin, and `lake.open()` all use it:
+
+```
+LAKE=http://server:8377
+LAKE_TOKEN=<the same token>
+```
+
+```python
+mem = lake.open("http://server:8377", token="...")    # or lake.open() to read ~/.lake/env
+```
+
+A server refuses to listen beyond localhost without a token. Writes made while the server is unreachable wait in a
+local spool (`~/.lake/spool.jsonl`) and are sent on the next call. SPEC §13 has the details.
+
+## Read more
 
 - [`GUIDE.md`](GUIDE.md): building an agent with memory, local or networked.
 - [`SPEC.md`](SPEC.md): the complete behaviour, signature by signature.
 - [`plugin/README.md`](plugin/README.md): the Claude Code and Codex plugin.
 
-Standard library only (SQLite with FTS5); `pip install "fathom-lake[numpy]"` speeds up vector recall on large lakes.
 MIT licensed.
