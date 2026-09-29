@@ -45,8 +45,8 @@ memory has to find the right pieces on its own. Every score in the chart above i
 simply don't publish M.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-vs-m-dark-fa190b06.svg">
-  <img src="assets/longmemeval-s-vs-m-light-652ab40c.svg" alt="Fathom-lake on LongMemEval S and M: overall 94.8 to 85.0, a single fact the user said 97.1 to 94.3, facts spread over many sessions 92.5 to 74.4. No other system publishes an M score." width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-vs-m-dark-e7fe915d.svg">
+  <img src="assets/longmemeval-s-vs-m-light-3e4c077a.svg" alt="Fathom-lake on LongMemEval S and M: overall 94.8 to 85.0, a single fact the user said 97.1 to 94.3, facts spread over many sessions 92.5 to 74.4. No other system publishes an M score." width="760">
 </picture>
 
 Finding one fact in 1.5 million tokens barely moves (97.1% to 94.3%). Gathering facts scattered across many sessions

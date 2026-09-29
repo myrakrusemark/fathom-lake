@@ -35,5 +35,5 @@
 <rect x="0.75" y="432" width="758.5" height="62" rx="8" fill="none" stroke="#9198a1" stroke-width="1.5" stroke-dasharray="5 4"/>
 <text x="16.0" y="456.0" fill="#e6edf3" font-size="14" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Nobody else shows M.</text>
 <text x="16.0" y="476.0" fill="#e6edf3" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Every other system in the chart above reports S only. We could not find a published M score for Mastra, Mem0, Zep,</text>
-<text x="16.0" y="490.0" fill="#e6edf3" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Honcho, Hindsight, Supermemory or ByteRover.</text>
+<text x="16.0" y="490.0" fill="#e6edf3" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Honcho, Hindsight, Supermemory or ByteRover. Draw your own conclusions...</text>
 </svg>
