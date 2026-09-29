@@ -17,23 +17,23 @@
 <text x="120.0" y="411.0" fill="#59636e" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">~115k tokens per question</text>
 <text x="370.0" y="394.0" fill="#1f2328" font-size="13" font-weight="600" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">M: ~500 sessions</text>
 <text x="370.0" y="411.0" fill="#59636e" font-size="11" font-weight="400" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">~1.5M tokens per question</text>
-<line x1="120" y1="87.4" x2="370" y2="104.2" stroke="#5fb3a8" stroke-width="2.2"/>
-<circle cx="120" cy="87.4" r="5" fill="#5fb3a8"/>
-<circle cx="370" cy="104.2" r="5" fill="#5fb3a8"/>
-<text x="108.0" y="91.4" fill="#5fb3a8" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">97.1</text>
-<text x="382.0" y="108.2" fill="#5fb3a8" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.3  A single fact the user said</text>
-<line x1="120" y1="101.2" x2="370" y2="160.0" stroke="#0e7c70" stroke-width="3.2"/>
-<circle cx="120" cy="101.2" r="5" fill="#0e7c70"/>
-<circle cx="370" cy="160.0" r="5" fill="#0e7c70"/>
-<text x="108.0" y="120.2" fill="#0e7c70" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.8</text>
-<text x="382.0" y="164.0" fill="#0e7c70" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">85.0  Overall</text>
-<line x1="120" y1="115.0" x2="370" y2="223.6" stroke="#59636e" stroke-width="2.2"/>
-<circle cx="120" cy="115.0" r="5" fill="#59636e"/>
-<circle cx="370" cy="223.6" r="5" fill="#59636e"/>
-<text x="108.0" y="149.0" fill="#59636e" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">92.5</text>
-<text x="382.0" y="227.6" fill="#59636e" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">74.4  Facts spread over many sessions</text>
-<rect x="0.75" y="432" width="758.5" height="62" rx="8" fill="none" stroke="#c2410c" stroke-width="1.5" stroke-dasharray="5 4"/>
-<text x="16.0" y="456.0" fill="#c2410c" font-size="14" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Nobody else shows M.</text>
+<line x1="120" y1="87.4" x2="370" y2="104.2" stroke="#efc488" stroke-width="2.2"/>
+<circle cx="120" cy="87.4" r="5" fill="#efc488"/>
+<circle cx="370" cy="104.2" r="5" fill="#efc488"/>
+<text x="108.0" y="91.4" fill="#efc488" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">97.1</text>
+<text x="382.0" y="108.2" fill="#efc488" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.3  A single fact the user said</text>
+<line x1="120" y1="101.2" x2="370" y2="160.0" stroke="#d98a2b" stroke-width="3.2"/>
+<circle cx="120" cy="101.2" r="5" fill="#d98a2b"/>
+<circle cx="370" cy="160.0" r="5" fill="#d98a2b"/>
+<text x="108.0" y="120.2" fill="#d98a2b" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.8</text>
+<text x="382.0" y="164.0" fill="#d98a2b" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">85.0  Overall</text>
+<line x1="120" y1="115.0" x2="370" y2="223.6" stroke="#a86412" stroke-width="2.2"/>
+<circle cx="120" cy="115.0" r="5" fill="#a86412"/>
+<circle cx="370" cy="223.6" r="5" fill="#a86412"/>
+<text x="108.0" y="149.0" fill="#a86412" font-size="12" font-weight="600" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">92.5</text>
+<text x="382.0" y="227.6" fill="#a86412" font-size="12" font-weight="600" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">74.4  Facts spread over many sessions</text>
+<rect x="0.75" y="432" width="758.5" height="62" rx="8" fill="none" stroke="#59636e" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="16.0" y="456.0" fill="#1f2328" font-size="14" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Nobody else shows M.</text>
 <text x="16.0" y="476.0" fill="#1f2328" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Every other system in the chart above reports S only. We could not find a published M score for Mastra, Mem0, Zep,</text>
 <text x="16.0" y="490.0" fill="#1f2328" font-size="12" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Honcho, Hindsight, Supermemory or ByteRover.</text>
 </svg>

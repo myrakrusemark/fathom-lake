@@ -17,7 +17,7 @@
 <text x="675.6" y="89.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.9%</text>
 <text x="238.0" y="116.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Fathom-lake</text>
 <text x="238.0" y="130.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Claude Opus 5.5</text>
-<rect x="250" y="108" width="417.1" height="20" rx="3" fill="#35c4b0"/>
+<rect x="250" y="108" width="417.1" height="20" rx="3" fill="#e8a24e"/>
 <text x="675.1" y="123.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">94.8%</text>
 <text x="238.0" y="150.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mem0</text>
 <text x="238.0" y="164.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">answering model not stated</text>
@@ -37,15 +37,15 @@
 <text x="655.8" y="259.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">90.4%</text>
 <text x="238.0" y="286.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Fathom-lake</text>
 <text x="238.0" y="300.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Claude Haiku 4.5</text>
-<rect x="250" y="278" width="387.2" height="20" rx="3" fill="#2b8c7f"/>
+<rect x="250" y="278" width="387.2" height="20" rx="3" fill="#9a6a2c"/>
 <text x="645.2" y="293.0" fill="#e6edf3" font-size="13" font-weight="650" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">88.0%</text>
 <text x="238.0" y="320.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Supermemory</text>
 <text x="238.0" y="334.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpt-4o</text>
 <rect x="250" y="312" width="359.0" height="20" rx="3" fill="#6e7781"/>
 <text x="617.0" y="327.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">81.6%</text>
-<text x="238.0" y="354.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mem0, independent rerun</text>
-<text x="238.0" y="368.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">GPT-5 harness</text>
-<rect x="250" y="346" width="324.7" height="20" rx="3" fill="#f0883e"/>
+<text x="238.0" y="354.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Mem0, rerun by Maximem</text>
+<text x="238.0" y="368.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">a competing vendor; GPT-5 harness</text>
+<rect x="250" y="346" width="324.7" height="20" rx="3" fill="#6e7781"/>
 <text x="582.7" y="361.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="start" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">73.8%</text>
 <text x="238.0" y="388.0" fill="#e6edf3" font-size="13" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">Zep / Graphiti</text>
 <text x="238.0" y="402.0" fill="#9198a1" font-size="11" font-weight="400" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">gpt-4o</text>

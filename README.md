@@ -24,7 +24,7 @@ systems that publish a score.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/longmemeval-s-dark.svg">
-  <img src="assets/longmemeval-s-light.svg" alt="LongMemEval-S scores: Mastra 94.9, Fathom-lake 94.8 with Claude Opus 5.5, Mem0 94.4 (73.8 in an independent rerun), ByteRover 92.8, Hindsight 91.4, Honcho 90.4, Fathom-lake 88.0 with Claude Haiku 4.5, Supermemory 81.6, Zep 71.2" width="760">
+  <img src="assets/longmemeval-s-light.svg" alt="LongMemEval-S scores: Mastra 94.9, Fathom-lake 94.8 with Claude Opus 5.5, Mem0 94.4 (73.8 when rerun by Maximem, a competing vendor), ByteRover 92.8, Hindsight 91.4, Honcho 90.4, Fathom-lake 88.0 with Claude Haiku 4.5, Supermemory 81.6, Zep 71.2" width="760">
 </picture>
 
 Fathom-lake's two scores are graded by the benchmark's own script and grader (`gpt-4o-2024-08-06`, unmodified). The
@@ -32,7 +32,7 @@ others are what each vendor reports for itself, with different answering models 
 neighbourhood rather than a ranking. Sources:
 [Mastra](https://mastra.ai/research/observational-memory),
 [Mem0](https://mem0.ai/blog/state-of-ai-agent-memory-2026) and its
-[independent rerun](https://www.maximem.ai/blog/state-of-ai-memory-2026-claimed-vs-observed),
+[rerun by Maximem](https://www.maximem.ai/blog/state-of-ai-memory-2026-claimed-vs-observed),
 [ByteRover](https://www.byterover.dev/blog/benchmark_ai_agent_memory_real_production_byterover_top_market_accuracy_longmemeval),
 [Hindsight](https://arxiv.org/abs/2512.12818), [Honcho](https://honcho.dev/evals),
 [Supermemory](https://supermemory.ai/research/longmembench/), [Zep](https://arxiv.org/abs/2501.13956).
