@@ -6,7 +6,6 @@ shared from tests/conftest.py."""
 
 from __future__ import annotations
 
-import fcntl
 import json
 import os
 import re
@@ -31,6 +30,7 @@ from lake import (
     RemoteLake, cli,
 )
 from lake._io import export_line
+from lake import remote
 from lake.remote import _delta as remote_delta
 from lake import setting
 from lake.remote import read_env_file  # the §13.8 parser, re-exported from lake._env for older callers
@@ -477,15 +477,14 @@ def test_spool_flock(tmp_path: Path, home: Path) -> None:
     ids = {json.loads(line)["id"] for line in lines}  # every line parses, every id distinct
     assert len(ids) == 200
     # an append issued while a flush holds LOCK_EX completes afterwards and survives the truncation
-    fd = os.open(spool, os.O_RDWR | os.O_CREAT | os.O_APPEND, 0o600)
-    fcntl.flock(fd, fcntl.LOCK_EX)
+    fd = os.open(spool, remote._SPOOL_FLAGS, 0o600)
+    remote._lock(fd)
     rl = RemoteLake(url, spool_path=spool)
     thread = threading.Thread(target=lambda: rl.write("the late append", "chat"))
     thread.start()
     time.sleep(0.3)  # the writer is now blocked on the lock
     os.ftruncate(fd, 0)  # what a real flush does in step 4
-    fcntl.flock(fd, fcntl.LOCK_UN)
-    os.close(fd)
+    remote._close(fd)  # releases the lock
     thread.join(timeout=30)
     assert not thread.is_alive()
     lines = spool.read_text(encoding="utf-8").splitlines()
